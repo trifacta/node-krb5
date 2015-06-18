@@ -1,6 +1,7 @@
 
 fs = require 'fs'
-krb5 = require '../build/Release/krb5'
+bindings = require 'bindings'
+krb5 = bindings 'krb5'
 
 module.exports = (options, callback) ->
   k = new Krb5 options
